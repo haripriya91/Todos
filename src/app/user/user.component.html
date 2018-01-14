@@ -1,0 +1,18 @@
+<section class="todoapp">
+  <header class="header">
+      <h1>User</h1>
+  </header>
+  <section class="main">
+          <ul class="todo-list">
+              <!--  -->
+            <li *ngFor="let key of viewModel" class="col-lg-12">
+
+                <label class="col-lg-4">{{model[key].name}}</label>
+                <label class="col-lg-4">{{model[key].age}}</label>
+                <label class="col-lg-4">{{model[key].address}}</label>
+            </li>
+          </ul>
+          <div>
+            {{user.name}},{{user.age}},{{user.address}}
+          </div>
+</section> 
